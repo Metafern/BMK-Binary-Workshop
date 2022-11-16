@@ -8,8 +8,12 @@ bison \
 flex \
 gcc \
 tmux \
-&& \
+sudo \
+software-properties-common && \
+add-apt-repository ppa:deadsnakes/ppa && \
 rm -rf /var/lib/apt/lists/*
+
+RUN pip3 install pwntools
 
 RUN useradd ${USERNAME} && \
 usermod -aG sudo ${USERNAME}
