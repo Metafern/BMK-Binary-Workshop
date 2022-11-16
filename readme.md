@@ -16,3 +16,4 @@ Key shortcuts:
 - Add gdb
 - Add python3 + pwntools
 - Configure test webpage (flask?)
+- Add sudo
